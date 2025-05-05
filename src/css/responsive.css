@@ -1,0 +1,81 @@
+/* Ẩn khi màn hình nhỏ hơn 1400px (xxl trở xuống) */
+@media (max-width: 1399.98px) {
+}
+
+/* Ẩn khi màn hình nhỏ hơn 1200px (xl trở xuống) */
+@media (max-width: 1199.98px) {
+    .top-bar {
+        gap: 20px;
+    }
+
+    .favorite__quantity {
+        position: absolute;
+        top: -3px;
+        right: 3px;
+        color: var(--primary-color);
+    }
+}
+
+/* Ẩn khi màn hình nhỏ hơn 992px (lg trở xuống) */
+@media (max-width: 991.98px) {
+}
+
+/* Ẩn khi màn hình nhỏ hơn 768px (md trở xuống) */
+@media (max-width: 767.98px) {
+    .middle-box {
+        height: 32px;
+    }
+    .search-box__input {
+        padding-left: 15px;
+    }
+    .search-box__remove-icon {
+        padding: 3px;
+        font-size: 1.4rem;
+    }
+    .search-box__btn {
+        font-size: 1.4rem;
+        width: 35px;
+    }
+    .header__logo {
+        width: 100px;
+    }
+    .right-box {
+        gap: 5px;
+    }
+    .favorite__icon,
+    .user__icon,
+    .shopping-cart__icon {
+        height: 30px;
+        font-size: 1.6rem;
+    }
+    .favorite__quantity {
+        top: -4px;
+        right: 0px;
+    }
+}
+
+/* Ẩn khi màn hình nhỏ hơn 576px (sm trở xuống) */
+@media (max-width: 575.98px) {
+    .search-box__btn {
+        width: 28px;
+    }
+    .header__logo {
+        width: 80px;
+    }
+    .search-box__input {
+        font-size: 1.2rem;
+    }
+
+    .top-bar {
+        padding: 5px;
+    }
+    .top-bar {
+        gap: 10px;
+    }
+    .favorite__icon,
+    .user__icon,
+    .shopping-cart__icon {
+        height: 28px;
+        font-size: 1.4rem;
+    }
+}
