@@ -17,103 +17,189 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <div class="top-bar">
-                    <div class="left-box">
-                        <div class="header__logo">
-                            <a href="#">
-                                <img
-                                    src="./src/assets/images/logo.webp"
-                                    alt="logo"
-                                    class="logo"
-                                />
-                            </a>
-                        </div>
-                        <a
-                            href="#"
-                            class="btn btn-primary top-bar__btn d-none d-xl-block"
-                        >
-                            <small>
-                                hệ thống cửa hàng
-                                <strong>(8 chi nhánh)</strong>
-                            </small>
-                        </a>
-                    </div>
-                    <div class="middle-box">
-                        <div class="search-box">
-                            <input
-                                class="search-box__input"
-                                type="text"
-                                name="search"
-                                placeholder="Bạn muốn tìm gì?"
-                            />
-                            <span class="search-box__remove-icon">
-                                <i class="fa-solid fa-xmark"></i>
-                            </span>
-                            <button class="search-box__btn">
-                                <span class="search-box__icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="right-box">
-                        <div class="hotline d-none d-lg-flex">
-                            <a href="#" class="hotline__icon">
-                                <i class="fa-solid fa-phone-volume"></i>
-                            </a>
-                            <div class="hotline__content d-none d-xl-block">
-                                <p class="hotline__text">Hotline</p>
+            <div class="top-bar__wrapper">
+                <div class="container">
+                    <div class="top-bar">
+                        <div class="left-box">
+                            <div class="header__logo">
                                 <a href="#">
-                                    <strong class="hotline__number"
-                                        >1900 9090</strong
-                                    >
+                                    <img src="https://theme.hstatic.net/200000895723/1001254710/14/logo.png?v=294"
+                                         alt="logo"
+                                         class="logo" />
+                                </a>
+                            </div>
+                            <a href="#"
+                               class="btn btn-primary top-bar__btn d-none d-xl-block">
+                                <small>
+                                    hệ thống cửa hàng
+                                    <strong>(8 chi nhánh)</strong>
+                                </small>
+                            </a>
+                        </div>
+                        <div class="middle-box">
+                            <div class="search-box">
+                                <input class="search-box__input"
+                                       type="text"
+                                       name="search"
+                                       placeholder="Bạn muốn tìm gì?" />
+                                <span class="search-box__remove-icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                                <button class="search-box__btn">
+                                    <span class="search-box__icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <div class="hotline d-none d-lg-flex">
+                                <a href="#" class="hotline__icon">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </a>
+                                <div class="hotline__content d-none d-xl-block">
+                                    <p class="hotline__text">Hotline</p>
+                                    <a href="#">
+                                        <strong class="hotline__number">1900 9090</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="favorite">
+                                <a href="#" class="favorite__icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                                <div class="favorite__content">
+                                    <p class="favorite__text d-none d-xl-block">
+                                        Yêu thích
+                                    </p>
+                                    <a href="#" class="favorite__link">
+                                        <span class="favorite__quantity">0</span>
+                                        <strong class="favorite__product d-none d-xl-inline">sản phẩm</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="user">
+                                <a href="#">
+                                    <span class="user__icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="shopping-cart">
+                                <a href="#">
+                                    <span class="shopping-cart__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <span class="shopping-cart__quantity">0</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="favorite">
-                            <a href="#" class="favorite__icon">
-                                <i class="fa-solid fa-heart"></i>
-                            </a>
-                            <div class="favorite__content">
-                                <p class="favorite__text d-none d-xl-block">
-                                    Yêu thích
-                                </p>
-                                <a href="#" class="favorite__link">
-                                    <span class="favorite__quantity">0</span>
-                                    <strong
-                                        class="favorite__product d-none d-xl-inline"
-                                        >sản phẩm</strong
-                                    >
-                                </a>
+                    </div>
+                </div>
+                <nav class="header-nav">
+                    <div class="container">
+                        <ul class="nav__list row">
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <section class="hero">
+                <div class="container-fluid p-0">
+                    <div id="heroCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heroCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#heroCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#heroCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://theme.hstatic.net/200000895723/1001254710/14/slider_1.jpg?v=294" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://theme.hstatic.net/200000895723/1001254710/14/slider_2.jpg?v=294" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <div class="user">
-                            <a href="#">
-                                <span class="user__icon">
-                                    <i class="fa-solid fa-user"></i>
-                                </span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="category">
+                <div class="container">
+                    <h1 class="category__title">Danh mục sản phẩm</h1>
+                    <div class="category-list">
+                        <div class="category-item">
+                            <a href="#" class="category-item__link">
+                                <div class="category-item__image">
+                                    <img src="https://theme.hstatic.net/200000895723/1001254710/14/season_coll_1_img_large.png?v=294" alt="category" class="category-item__img" />
+                                    <div class="category-item__circle"></div>
+                                </div>
+                                <h3 class="category-item__name">Mountain bike</h3>
+                                <p class="category-item__quantity">19 sản phẩm</p>
                             </a>
                         </div>
-                        <div class="shopping-cart">
-                            <a href="#">
-                                <span class="shopping-cart__icon">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </span>
-                                <span class="shopping-cart__quantity">0</span>
+                        <div class="category-item">
+                            <a href="#" class="category-item__link">
+                                <div class="category-item__image">
+                                    <img src="https://theme.hstatic.net/200000895723/1001254710/14/season_coll_1_img_large.png?v=294" alt="category" class="category-item__img" />
+                                    <div class="category-item__circle"></div>
+                                </div>
+                                <h3 class="category-item__name">Mountain bike</h3>
+                                <p class="category-item__quantity">19 sản phẩm</p>
+                            </a>
+                        </div>
+                        <div class="category-item">
+                            <a href="#" class="category-item__link">
+                                <div class="category-item__image">
+                                    <img src="https://theme.hstatic.net/200000895723/1001254710/14/season_coll_1_img_large.png?v=294" alt="category" class="category-item__img" />
+                                    <div class="category-item__circle"></div>
+                                </div>
+                                <h3 class="category-item__name">Mountain bike</h3>
+                                <p class="category-item__quantity">19 sản phẩm</p>
+                            </a>
+                        </div>
+                        <div class="category-item">
+                            <a href="#" class="category-item__link">
+                                <div class="category-item__image">
+                                    <img src="https://theme.hstatic.net/200000895723/1001254710/14/season_coll_1_img_large.png?v=294" alt="category" class="category-item__img" />
+                                    <div class="category-item__circle"></div>
+                                </div>
+                                <h3 class="category-item__name">Mountain bike</h3>
+                                <p class="category-item__quantity">19 sản phẩm</p>
+                            </a>
+                        </div>
+                        <div class="category-item">
+                            <a href="#" class="category-item__link">
+                                <div class="category-item__image">
+                                    <img src="https://theme.hstatic.net/200000895723/1001254710/14/season_coll_1_img_large.png?v=294" alt="category" class="category-item__img" />
+                                    <div class="category-item__circle"></div>
+                                </div>
+                                <h3 class="category-item__name">Mountain bike</h3>
+                                <p class="category-item__quantity">19 sản phẩm</p>
+                            </a>
+                        </div>
+                        <div class="category-item">
+                            <a href="#" class="category-item__link">
+                                <div class="category-item__image">
+                                    <img src="https://theme.hstatic.net/200000895723/1001254710/14/season_coll_1_img_large.png?v=294" alt="category" class="category-item__img" />
+                                    <div class="category-item__circle"></div>
+                                </div>
+                                <h3 class="category-item__name">Mountain bike</h3>
+                                <p class="category-item__quantity">19 sản phẩm</p>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid">
-                <nav class="header-nav"></nav>
-            </div>
-            <div class="container">
-                <section class="hero"></section>
-            </div>
-        </header>
-
+            </section>
+        </main>
         <script src="./src/assets/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

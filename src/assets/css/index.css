@@ -10,11 +10,14 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    height: 10000px;
 }
 
 button {
     border: none;
     outline: none;
+  
 }
 
 p {
@@ -28,14 +31,31 @@ a {
 
 .btn {
     transition: 0.3s;
+    background-color: var(--hover-color);
+}
+ol, ul {
+    list-style: none;
+}
+/* ============================================= header =============================================*/
+
+header {
+    position: relative;
+}
+
+.top-bar__wrapper {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--bg-color);
 }
 
 /* ============================================= top bar =============================================*/
 .top-bar {
     height: 60px;
     padding: 10px;
-    background: var(--bg-color);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,6 +87,9 @@ a {
     font-size: 1.4rem;
     white-space: nowrap;
     border: none;
+    background-color: #fff;
+    color: var(--text-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .top-bar__btn strong {
@@ -74,7 +97,9 @@ a {
 }
 
 .top-bar__btn:hover {
-    background-color: var(--hover-color);
+    color: var(--bg-color);
+     background-color: #f0f0f0;
+
 }
 /* ++++++++++++++++++++++ middle box ++++++++++++++++++++++ */
 .middle-box {
@@ -245,3 +270,84 @@ a {
 /* -------- content -------- */
 /* ++++++++++++++++++++++ box ++++++++++++++++++++++ */
 /* ============================================= block  =============================================*/
+/* ============================================= header-nav  =============================================*/
+.header-nav {
+    height: 45px;
+    background-color: #fff;
+}
+
+/* ============================================= hero  =============================================*/
+.hero {
+    margin-top: 105px;
+}
+
+
+/* ============================================= Main  =============================================*/
+/* ============================================= Category  =============================================*/
+.category {
+    margin-top: 40px;
+}
+
+.category__title {
+    text-align: center;
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.category-item {
+    min-width: 200px;
+}
+.category-item__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+.category-item__img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+.category-item__circle {
+    height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #ccc;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.category-item:hover .category-item__circle {
+    transform: scale(1.3);
+    background-color: var(--bg-color);
+}
+
+.category-item__name {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.category-item__quantity {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 5px;
+}
