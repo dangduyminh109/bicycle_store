@@ -157,6 +157,7 @@
     .blog__list-wrapper {
         overflow: hidden;
     }
+
 }
 
 /* Ẩn khi màn hình nhỏ hơn 576px (sm trở xuống) */
@@ -204,7 +205,8 @@
         width: 900px;
     }
 
-    section,.footer{
+    section,
+    .footer {
         margin-top: 50px !important;
     }
     .hero {
@@ -234,7 +236,7 @@
         transform: translate(-20%, -110%) scale(0.5, 0.5);
     }
 
-    .offer__banner{
+    .offer__banner {
         margin-bottom: 10px;
     }
 
@@ -244,10 +246,10 @@
     .blog__list-wrapper {
         overflow: hidden;
     }
-    .offer__btn{
+    .offer__btn {
         margin-top: 10px;
     }
-    .offer__header{
+    .offer__header {
         margin-bottom: 5px;
     }
 }
