@@ -7,12 +7,11 @@
     .top-bar {
         gap: 20px;
     }
-
     .favorite__quantity {
         position: absolute;
         top: -3px;
-        right: 3px;
-        color: var(--primary-color);
+        right: 0px;
+        color: var(--text-color);
     }
 }
 
@@ -72,7 +71,7 @@
         gap: 5px;
     }
     .favorite__icon,
-    .user__icon,
+    .user__btn,
     .shopping-cart__icon {
         height: 30px;
         font-size: 1.6rem;
@@ -80,6 +79,11 @@
     .favorite__quantity {
         top: -4px;
         right: 0px;
+    }
+    .favorite__quantity,
+    .shopping-cart__quantity {
+        height: 15px;
+        font-size: 1rem;
     }
 
     .category {
@@ -157,7 +161,6 @@
     .blog__list-wrapper {
         overflow: hidden;
     }
-
 }
 
 /* Ẩn khi màn hình nhỏ hơn 576px (sm trở xuống) */
@@ -191,6 +194,7 @@
         height: 28px;
         font-size: 1.4rem;
     }
+
     .category__title {
         font-size: 2rem;
     }

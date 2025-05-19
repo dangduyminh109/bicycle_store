@@ -100,11 +100,14 @@
                                 </div>
                             </div>
                             <div class="user">
-                                <a href="#">
-                                    <span class="user__icon">
-                                        <i class="fa-solid fa-user"></i>
-                                    </span>
-                                </a>
+                                <button
+                                    type="button"
+                                    class="user__btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#loginModal"
+                                >
+                                    <i class="fa-regular fa-user"></i>
+                                </button>
                             </div>
                             <div class="shopping-cart">
                                 <a href="#">
@@ -2230,7 +2233,9 @@
                     </div>
                     <div class="offer__list-wrapper blog__list-wrapper">
                         <div class="offer__list blog__list row">
-                            <div class="card card-blog col-12 col-md-6 col-lg-3">
+                            <div
+                                class="card card-blog col-12 col-md-6 col-lg-3"
+                            >
                                 <a href="#">
                                     <img
                                         src="./src/assets/images/blog/blog-1.jpg"
@@ -2260,10 +2265,14 @@
                                         rẻ có thể là lựa chọn tối ưu nhưng cũng
                                         tiềm...
                                     </p>
-                                    <a href="#" class="card-blog__link">Đọc tiếp</a>
+                                    <a href="#" class="card-blog__link"
+                                        >Đọc tiếp</a
+                                    >
                                 </div>
                             </div>
-                            <div class="card card-blog col-12 col-md-6 col-lg-3">
+                            <div
+                                class="card card-blog col-12 col-md-6 col-lg-3"
+                            >
                                 <a href="#">
                                     <img
                                         src="./src/assets/images/blog/blog-1.jpg"
@@ -2293,10 +2302,14 @@
                                         rẻ có thể là lựa chọn tối ưu nhưng cũng
                                         tiềm...
                                     </p>
-                                    <a href="#" class="card-blog__link">Đọc tiếp</a>
+                                    <a href="#" class="card-blog__link"
+                                        >Đọc tiếp</a
+                                    >
                                 </div>
                             </div>
-                            <div class="card card-blog col-12 col-md-6 col-lg-3">
+                            <div
+                                class="card card-blog col-12 col-md-6 col-lg-3"
+                            >
                                 <a href="#">
                                     <img
                                         src="./src/assets/images/blog/blog-1.jpg"
@@ -2326,10 +2339,14 @@
                                         rẻ có thể là lựa chọn tối ưu nhưng cũng
                                         tiềm...
                                     </p>
-                                    <a href="#" class="card-blog__link">Đọc tiếp</a>
+                                    <a href="#" class="card-blog__link"
+                                        >Đọc tiếp</a
+                                    >
                                 </div>
                             </div>
-                            <div class="card card-blog d-none d-md-block col-12 col-md-6 col-lg-3">
+                            <div
+                                class="card card-blog d-none d-md-block col-12 col-md-6 col-lg-3"
+                            >
                                 <a href="#">
                                     <img
                                         src="./src/assets/images/blog/blog-1.jpg"
@@ -2360,10 +2377,11 @@
                                         rẻ có thể là lựa chọn tối ưu nhưng cũng
                                         tiềm...
                                     </p>
-                                    <a href="#" class="card-blog__link">Đọc tiếp</a>
+                                    <a href="#" class="card-blog__link"
+                                        >Đọc tiếp</a
+                                    >
                                 </div>
                             </div>
-                          
                         </div>
                     </div>
                 </div>
@@ -2600,6 +2618,359 @@
                 </div>
             </div>
         </footer>
+
+        <div
+            class="modal fade modal-login"
+            id="loginModal"
+            tabindex="-1"
+            aria-labelledby="loginModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="login__logo">
+                            <img
+                                class="logo__img"
+                                src="./src/assets/images/Logo/logo.webp"
+                                alt="logo"
+                            />
+                        </div>
+                        <button
+                            class="btn-close"
+                            type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="auth" id="auth">
+                            <div class="block__forgot">
+                                <h1 class="modal-title">Quên mật khẩu</h1>
+                                <form
+                                    action="/auth/forgot"
+                                    method="post"
+                                    class="authForm"
+                                >
+                                    <div class="form-group">
+                                        <input
+                                            type="email"
+                                            class="email form-control"
+                                            name="email"
+                                            placeholder="Email"
+                                            required
+                                            isForgot="true"
+                                        />
+                                        <small class="form-text"
+                                            >Vui lòng nhập email</small
+                                        >
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-8">
+                                            <input
+                                                type="text"
+                                                name="confirm"
+                                                class="confirm form-control"
+                                                placeholder="Mã xác nhận"
+                                                autocomplete="off"
+                                                required
+                                            />
+                                            <small class="form-text"
+                                                >Vui lòng nhập mã xác
+                                                nhận</small
+                                            >
+                                        </div>
+                                        <div class="col-4">
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary btn-confirm"
+                                            >
+                                                Gửi mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="password__group">
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                name="password"
+                                                placeholder="Mật khẩu"
+                                                autocomplete="off"
+                                                required
+                                            />
+                                            <span class="password__icon"
+                                                ><i
+                                                    class="fa-solid fa-eye-slash"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                        <small class="form-text"
+                                            >Vui lòng nhập mật khẩu</small
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="password__group">
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                name="passwordConfirm"
+                                                placeholder="Xác nhận mật khẩu"
+                                                autocomplete="off"
+                                                required
+                                            />
+                                            <span class="password__icon"
+                                                ><i
+                                                    class="fa-solid fa-eye-slash"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                        <small class="form-text"
+                                            >Vui lòng xác nhận mật khẩu</small
+                                        >
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary btn-login btn-submit-auth"
+                                    >
+                                        Đổi mật khẩu
+                                    </button>
+                                    <div class="auth-link">
+                                        Bạn đã nhớ mật khẩu?
+                                        <p
+                                            class="auth-link__btn"
+                                            id="forgot-link__btn"
+                                        >
+                                            Đăng nhập
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="block__login">
+                                <h1 class="modal-title">Đăng nhập</h1>
+                                <form
+                                    action="/auth/login"
+                                    method="post"
+                                    class="authForm"
+                                >
+                                    <div class="form-group">
+                                        <input
+                                            type="email"
+                                            class="email form-control"
+                                            id="email"
+                                            placeholder="Email"
+                                            required
+                                            name="email"
+                                        />
+                                        <small class="form-text"
+                                            >Vui lòng nhập email</small
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="password__group">
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                name="password"
+                                                placeholder="Mật khẩu"
+                                                autocomplete="off"
+                                                required
+                                            />
+                                            <span class="password__icon"
+                                                ><i
+                                                    class="fa-solid fa-eye-slash"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                        <small class="form-text"
+                                            >Vui lòng nhập mật khẩu</small
+                                        >
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary btn-login btn-submit-auth"
+                                    >
+                                        Đăng nhập
+                                    </button>
+                                    <p
+                                        class="forgot-password"
+                                        id="login-link__btn--forgot"
+                                    >
+                                        Quên mật khẩu?
+                                    </p>
+                                    <div class="line-or">
+                                        <div class="line-or__line"></div>
+                                        <span class="line-or__text">Hoặc</span>
+                                        <div class="line-or__line"></div>
+                                    </div>
+                                    <div class="social-login">
+                                        <a
+                                            href="/auth/google"
+                                            class="social-login__item google"
+                                        >
+                                            <span class="social-login__icon"
+                                                ><i
+                                                    class="fa-brands fa-google"
+                                                ></i
+                                            ></span>
+                                            Google
+                                        </a>
+                                        <a
+                                            href="/auth/facebook"
+                                            class="social-login__item facebook"
+                                        >
+                                            <span class="social-login__icon"
+                                                ><i
+                                                    class="fa-brands fa-facebook-f"
+                                                ></i
+                                            ></span>
+                                            Facebook
+                                        </a>
+                                    </div>
+                                    <div class="auth-link">
+                                        Bạn chưa có tài khoản?
+                                        <p
+                                            class="auth-link__btn"
+                                            id="login-link__btn--register"
+                                        >
+                                            Đăng ký
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="block__register">
+                                <h1 class="modal-title">Đăng kí</h1>
+                                <form
+                                    action="/auth/register"
+                                    method="post"
+                                    class="authForm"
+                                >
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="name form-control"
+                                            id="name"
+                                            name="name"
+                                            placeholder="Họ tên"
+                                            autocomplete="off"
+                                            required
+                                        />
+                                        <small class="form-text"
+                                            >Vui lòng nhập họ tên</small
+                                        >
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-6">
+                                            <input
+                                                type="email"
+                                                class="email form-control"
+                                                name="email"
+                                                placeholder="Email"
+                                                required
+                                            />
+                                            <small class="form-text"
+                                                >Vui lòng nhập email</small
+                                            >
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="password__group">
+                                                <input
+                                                    type="password"
+                                                    class="form-control"
+                                                    name="password"
+                                                    placeholder="Mật khẩu"
+                                                    autocomplete="off"
+                                                    required
+                                                />
+                                                <span class="password__icon"
+                                                    ><i
+                                                        class="fa-solid fa-eye-slash"
+                                                    ></i
+                                                ></span>
+                                            </div>
+                                            <small class="form-text"
+                                                >Vui lòng nhập mật khẩu</small
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-8">
+                                            <input
+                                                type="text"
+                                                name="confirm"
+                                                class="confirm form-control"
+                                                placeholder="Mã xác nhận"
+                                                autocomplete="off"
+                                                required
+                                            />
+                                            <small class="form-text"
+                                                >Vui lòng nhập mã xác
+                                                nhận</small
+                                            >
+                                        </div>
+                                        <div class="col-4">
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary btn-confirm"
+                                            >
+                                                Gửi mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary btn-login btn-submit-auth"
+                                    >
+                                        Đăng Kí
+                                    </button>
+                                    <div class="line-or">
+                                        <div class="line-or__line"></div>
+                                        <span class="line-or__text">Hoặc</span>
+                                        <div class="line-or__line"></div>
+                                    </div>
+                                    <div class="social-login">
+                                        <a
+                                            href="/auth/google"
+                                            class="social-login__item google"
+                                        >
+                                            <span class="social-login__icon"
+                                                ><i
+                                                    class="fa-brands fa-google"
+                                                ></i
+                                            ></span>
+                                            Google
+                                        </a>
+                                        <a
+                                            href="/auth/facebook"
+                                            class="social-login__item facebook"
+                                        >
+                                            <span class="social-login__icon"
+                                                ><i
+                                                    class="fa-brands fa-facebook-f"
+                                                ></i
+                                            ></span>
+                                            Facebook
+                                        </a>
+                                    </div>
+                                    <div class="auth-link">
+                                        Bạn đã có tài khoản?
+                                        <p
+                                            class="auth-link__btn"
+                                            id="register-link__btn"
+                                        >
+                                            Đăng nhập
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="./src/assets/scripts/home.js"></script>
         <script src="./src/assets/bootstrap/js/bootstrap.min.js"></script>
     </body>
