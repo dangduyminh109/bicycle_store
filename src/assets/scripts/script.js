@@ -25,7 +25,9 @@ function handleProduct() {
 }
 
 function handleCollection() {
-    const checkbox = document.querySelectorAll("input[type='checkbox']");
+    const checkbox = document.querySelectorAll(
+        ".collection-item__thumbnail input[type='checkbox']"
+    );
     if (checkbox) {
         checkbox.forEach((item) => {
             item.addEventListener("change", () => {
@@ -156,9 +158,39 @@ async function handleAuth() {
     }
 }
 
+function handleQuantityControl() {
+    const quantityControls = document.querySelectorAll(
+        ".quantity-control"
+    );
+    if (quantityControls) {
+        quantityControls.forEach((item) => {
+            const quantityControlBtnDecrease = item.querySelector(
+                ".quantity-control__btn--decrease"
+            );
+            const quantityControlBtnIncrease = item.querySelector(
+                ".quantity-control__btn--increase"
+            );
+            const quantityControlInput = item.querySelector(
+                ".quantity-control__input"
+            );
+            console.log(item);
+            console.log(quantityControlInput, quantityControlBtnDecrease);
+            quantityControlBtnDecrease.onclick = () => {
+                if (quantityControlInput.value > 1) {
+                    quantityControlInput.value--;
+                }
+            }
+            quantityControlBtnIncrease.onclick = () => {
+                quantityControlInput.value++;
+            };
+        });
+    }
+}
+
 function init() {
     handleProduct();
     handleCollection();
     handleAuth();
+    handleQuantityControl();
 }
 init();

@@ -77,144 +77,6 @@
     margin-top: 5px;
 }
 
-/* ============================================= voucher  =============================================*/
-.voucher {
-    margin-top: 80px;
-}
-
-.voucher__list {
-    display: flex;
-    align-items: stretch;
-    gap: 20px;
-    padding: 5px;
-}
-
-/* ++++++++++++++++++++++ voucher item ++++++++++++++++++++++ */
-.voucher-item {
-    display: flex;
-    padding: 10px;
-    gap: 10px;
-    align-items: center;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.voucher-item__thumb {
-    width: 15%;
-}
-
-.voucher-item__content {
-    color: var(--text-color-2);
-    font-weight: 600;
-    flex: 1;
-    line-height: 1.4;
-    font-size: 1.4rem;
-}
-/* -------- voucher item top content -------- */
-.voucher-item__top-content {
-    display: flex;
-    margin-bottom: 10px;
-}
-.voucher-item__text {
-    flex: 1;
-}
-.voucher-item__name {
-    font-size: 1.6rem;
-    color: var(--text-color);
-    margin: 0;
-    font-weight: 600;
-}
-.voucher-item__detail {
-    position: relative;
-}
-.voucher-item__icon {
-    height: 25px;
-    width: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #000;
-    border-radius: 50%;
-    color: #000;
-    cursor: pointer;
-}
-
-.voucher-info {
-    position: absolute;
-    display: none;
-    top: 10px;
-    left: 97%;
-    z-index: 150;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 15;
-    width: 300px;
-}
-.voucher-item:last-child .voucher-info {
-    top: 10px;
-    left: -297px;
-}
-
-.voucher-item__detail:hover .voucher-info {
-    display: block;
-}
-.voucher-info__name {
-    background-color: var(--hover-color);
-    padding: 10px;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-}
-.voucher-info__content {
-    color: #000;
-}
-.voucher-info__content table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.voucher-info__content td,
-.voucher-info__content th {
-    text-align: center;
-    vertical-align: middle;
-    padding: 1rem;
-}
-
-.voucher-info__copy-icon {
-    cursor: pointer;
-}
-.voucher-info__desc {
-    padding: 0 20px 10px;
-}
-.voucher-info__description {
-    color: #000;
-    font-weight: 600;
-    font-size: 1.6rem;
-    margin-top: 10px;
-}
-/* -------- voucher item bottom content -------- */
-.voucher-item__bottom-content {
-    display: flex;
-}
-.voucher-item__code strong {
-    color: #000;
-    font-weight: 600;
-}
-.voucher-item__expired {
-    height: auto;
-    max-height: 100%;
-    object-fit: cover;
-}
-.voucher-item__expired .btn-voucher {
-    color: #000;
-    background-color: var(--bg-color);
-    font-size: 1.4rem;
-}
-.voucher-item__expired .btn-voucher:hover {
-    background-color: var(--hover-color);
-    color: #fff;
-}
-
 /* ============================================= banner  =============================================*/
 .banner {
     margin-top: 80px;
@@ -617,13 +479,13 @@
 .blog {
     margin-top: 80px;
 }
-.card-blog__time{
+.card-blog__time {
     color: var(--text-color-2);
 }
-.card-blog__minute{
+.card-blog__minute {
     margin-left: 10px;
 }
-.card-blog__title{
+.card-blog__title {
     color: var(--text-color);
     font-size: 1.8rem;
     font-weight: 600;

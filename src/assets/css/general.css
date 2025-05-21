@@ -123,7 +123,7 @@ header {
 }
 
 .top-bar__wrapper {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: fixed;
     top: 0;
     left: 0;
@@ -493,10 +493,11 @@ header .right-box {
 /* ============================================= header breadcrumb  =============================================*/
 .breadcrumb__wrapper {
     background-color: #f8f8f8;
+    margin-top: 105px;
 }
 .breadcrumb {
     margin: 0;
-    padding: 5px 10px;
+    padding: 5px 8px;
 }
 .breadcrumb-item a {
     color: var(--text-color);
@@ -1067,4 +1068,171 @@ footer .right-box {
     border-color: inherit;
     background-color: var(--primary-color);
     color: var(--text-color);
+}
+
+/* ============================================= quantity control =============================================*/
+
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--text-color);
+}
+
+.quantity-control__btn {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-2);
+}
+
+.quantity-control__input {
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+
+/* ============================================= voucher  =============================================*/
+.voucher {
+    margin-top: 80px;
+}
+.voucher__list {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding: 5px;
+}
+
+/* ++++++++++++++++++++++ voucher item ++++++++++++++++++++++ */
+.voucher-item {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.voucher-item__thumb {
+    width: 15%;
+}
+
+.voucher-item__content {
+    color: var(--text-color-2);
+    font-weight: 600;
+    flex: 1;
+    line-height: 1.4;
+    font-size: 1.4rem;
+}
+/* -------- voucher item top content -------- */
+.voucher-item__top-content {
+    display: flex;
+    margin-bottom: 10px;
+}
+.voucher-item__text {
+    flex: 1;
+}
+.voucher-item__name {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 600;
+}
+.voucher-item__detail {
+    position: relative;
+}
+.voucher-item__icon {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+}
+
+.voucher-info {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 97%;
+    z-index: 150;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 15;
+    width: 300px;
+}
+.voucher-item.left .voucher-info {
+    top: 10px;
+    left: -297px;
+}
+
+.voucher-item__detail:hover .voucher-info {
+    display: block;
+}
+.voucher-info__name {
+    background-color: var(--hover-color);
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.voucher-info__content {
+    color: #000;
+}
+.voucher-info__content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.voucher-info__content td,
+.voucher-info__content th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+.voucher-info__copy-icon {
+    cursor: pointer;
+}
+.voucher-info__desc {
+    padding: 0 20px 10px;
+}
+.voucher-info__description {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+/* -------- voucher item bottom content -------- */
+.voucher-item__bottom-content {
+    display: flex;
+}
+.voucher-item__code strong {
+    color: #000;
+    font-weight: 600;
+}
+.voucher-item__expired {
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+.voucher-item__expired .btn-voucher {
+    color: #000;
+    background-color: var(--bg-color);
+    font-size: 1.4rem;
+}
+.voucher-item__expired .btn-voucher:hover {
+    background-color: var(--hover-color);
+    color: #fff;
 }
