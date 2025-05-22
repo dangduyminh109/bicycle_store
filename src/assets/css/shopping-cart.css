@@ -1,4 +1,4 @@
-@import url("./_variable.css");
+@import url("/src/assets/css/_variables.css");
 /* ============================================= main  =============================================*/
 /* ============================================= empty-cart  =============================================*/
 .empty-cart {
@@ -151,7 +151,7 @@
     font-weight: 600;
     margin-bottom: 15px;
 }
-.delivery-info{
+.delivery-info {
     flex-wrap: wrap;
 }
 
@@ -223,6 +223,7 @@
     color: var(--text-color-2);
     font-weight: 400;
 }
+
 /* -------- discount -------- */
 .discount {
     margin-top: 20px;
@@ -257,6 +258,7 @@
     margin-top: 20px;
     transition: 0.3s;
     padding: 5px 30px;
+    text-align: center;
 }
 .pay-btn:hover {
     background-color: var(--hover-color);
@@ -269,7 +271,7 @@
     text-align: center;
 }
 
-.pay img{
+.pay img {
     width: 100%;
     max-width: 300px;
     object-fit: cover;

@@ -1,4 +1,4 @@
-@import url("./_variable.css");
+@import url("/src/assets/css/_variables.css");
 /* ============================================= main  =============================================*/
 /* ============================================= product  =============================================*/
 .product {
@@ -144,7 +144,7 @@
     padding: 20px 20px 20px 40px;
     list-style-type: disc;
 }
-
+/* -------- product discount -------- */
 .product__discount {
     margin-top: 30px;
     overflow: auto;

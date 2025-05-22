@@ -18,7 +18,7 @@
             href="./src/assets/icons/fontawesome/css/all.min.css"
         />
         <link rel="stylesheet" href="./src/assets/css/general.css" />
-        <link rel="stylesheet" href="./src/assets/css/shopping-cart.css" />
+        <link rel="stylesheet" href="./src/assets/css/payment.css" />
         <link rel="stylesheet" href="./src/assets/css/responsive.css" />
     </head>
     <body>
@@ -312,509 +312,275 @@
                             <a href="/index.html">Trang chủ</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Giỏ hàng
+                            Thanh toán
                         </li>
                     </ol>
                 </div>
             </nav>
-            <section class="empty-cart">
+            <section class="payment">
                 <div class="container">
-                    <p class="empty-cart__text">
-                        <span class="empty-cart__text-icon">
-                            <i class="fa-solid fa-tag"></i>
+                    <div class="payment__header">
+                        <span class="payment__icon">
+                            <i class="fa-regular fa-credit-card"></i>
                         </span>
-                        Freeship với đơn hàng trên 5.000.000đ. Mua sắm ngay
-                        nào!!!
-                    </p>
-                    <div class="empty-cart__content">
-                        <span class="empty-cart__icon-1">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span class="empty-cart__icon-2">
-                                <i class="fa-solid fa-circle-xmark"></i>
-                            </span>
-                        </span>
-                        <h2 class="empty-cart__title">
-                            “Hổng” có gì trong giỏ hết
-                        </h2>
-                        <p class="empty-cart__desc">
-                            Về trang cửa hàng để chọn mua sản phẩm bạn nhé!!
+                        <h1 class="payment__title">THANH TOÁN</h1>
+                        <p class="payment__desc">
+                            Vui lòng kiểm tra lại thông tin đơn hàng trước khi
+                            thanh toán
                         </p>
-                        <a
-                            href="/index.html"
-                            class="primary-btn empty-cart__btn"
-                        >
-                            Mua sắm ngay
-                        </a>
                     </div>
-                </div>
-            </section>
-            <section class="shopping-cart">
-                <div class="container">
-                    <div class="shopping-cart__wrapper row">
-                        <h1 class="shopping-cart__title">Giỏ hàng</h1>
-                        <div class="left-box col-12 col-lg-8">
-                            <div class="shopping-cart__process-wrapper">
-                                <div class="shopping-cart__process"></div>
-                                <span>100%</span>
-                            </div>
-                            <div class="shopping-cart__voucher">
-                                <p class="shopping-cart__voucher-text">
-                                    <span class="shopping-cart__voucher-icon"
-                                        ><i class="fa-solid fa-tag"></i>
-                                    </span>
-                                    EGAFREESHIP
-                                </p>
-                                <button class="btn-copy">Sao chép</button>
-                            </div>
-                            <small
-                                >Chúc mừng! Đơn hàng của bạn đã đủ điều kiện
-                                được Freeship 🎉</small
-                            >
-                            <div class="order-list">
-                                <div class="order-item">
-                                    <span class="order-item__icon">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </span>
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="ảnh xe đạp"
-                                            class="order-item__img"
-                                        />
-                                    </a>
-                                    <div class="order-item__info">
-                                        <a
-                                            href="/detail.html"
-                                            class="order-item__name"
-                                        >
-                                            Xe Đạp Đường Trường CF 1 Đĩa 2021
-                                        </a>
-                                        <small>Trắng</small>
-                                    </div>
-                                    <p class="order-item__price">77,800,000đ</p>
-                                    <div class="quantity-control">
-                                        <button
-                                            class="quantity-control__btn quantity-control__btn--decrease"
-                                        >
-                                            <span
-                                                ><i
-                                                    class="fa-solid fa-minus"
-                                                ></i
-                                            ></span>
-                                        </button>
-
-                                        <input
-                                            type="text"
-                                            class="quantity-control__input"
-                                            value="1"
-                                        />
-                                        <button
-                                            class="quantity-control__btn quantity-control__btn--increase"
-                                        >
-                                            <span
-                                                ><i class="fa-solid fa-plus"></i
-                                            ></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="order-item">
-                                    <span class="order-item__icon">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </span>
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="ảnh xe đạp"
-                                            class="order-item__img"
-                                        />
-                                    </a>
-                                    <div class="order-item__info">
-                                        <a
-                                            href="/detail.html"
-                                            class="order-item__name"
-                                        >
-                                            Xe Đạp Đường Trường CF 1 Đĩa 2021
-                                        </a>
-                                        <small>Trắng</small>
-                                    </div>
-                                    <p class="order-item__price">77,800,000đ</p>
-                                    <div class="quantity-control">
-                                        <button
-                                            class="quantity-control__btn quantity-control__btn--decrease"
-                                        >
-                                            <span
-                                                ><i
-                                                    class="fa-solid fa-minus"
-                                                ></i
-                                            ></span>
-                                        </button>
-
-                                        <input
-                                            type="text"
-                                            class="quantity-control__input"
-                                            value="1"
-                                        />
-                                        <button
-                                            class="quantity-control__btn quantity-control__btn--increase"
-                                        >
-                                            <span
-                                                ><i class="fa-solid fa-plus"></i
-                                            ></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="order-item">
-                                    <span class="order-item__icon">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </span>
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="ảnh xe đạp"
-                                            class="order-item__img"
-                                        />
-                                    </a>
-                                    <div class="order-item__info">
-                                        <a
-                                            href="/detail.html"
-                                            class="order-item__name"
-                                        >
-                                            Xe Đạp Đường Trường CF 1 Đĩa 2021
-                                        </a>
-                                        <small>Trắng</small>
-                                    </div>
-                                    <p class="order-item__price">77,800,000đ</p>
-                                    <div class="quantity-control">
-                                        <button
-                                            class="quantity-control__btn quantity-control__btn--decrease"
-                                        >
-                                            <span
-                                                ><i
-                                                    class="fa-solid fa-minus"
-                                                ></i
-                                            ></span>
-                                        </button>
-
-                                        <input
-                                            type="text"
-                                            class="quantity-control__input"
-                                            value="1"
-                                        />
-                                        <button
-                                            class="quantity-control__btn quantity-control__btn--increase"
-                                        >
-                                            <span
-                                                ><i class="fa-solid fa-plus"></i
-                                            ></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <label for="note" class="order-item__label"
-                                    >Ghi chú đơn hàng</label
+                    <div class="payment__wrapper row">
+                        <div class="payment-info col-12 col-lg-7">
+                            <h2 class="payment-info__title">
+                                Thông Tin Giao hàng
+                            </h2>
+                            <p class="payment-info__account">
+                                Bạn đã có tài khoản?
+                                <button
+                                    type="button"
+                                    class="payment-info__account-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#loginModal"
                                 >
-                                <input
-                                    type="text"
-                                    id="note"
-                                    class="order-item__note"
-                                />
-                            </div>
-                        </div>
-                        <div class="right-box col-12 col-lg-4">
-                            <h4 class="right-box__title">HẸN GIỜ NHẬN HÀNG</h4>
-                            <div class="delivery-info row">
-                                <div class="col-6">
-                                    <label for="date-of-receipt"
-                                        >ngày nhận hàng</label
-                                    >
-                                    <input type="date" id="date-of-receipt" />
+                                    Đăng nhập
+                                </button>
+                            </p>
+                            <form action="/" class="payment-info__form">
+                                <div class="mb-3">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="Name"
+                                        placeholder="Họ và tên"
+                                    />
                                 </div>
-                                <div class="col-6">
-                                    <label for="delivery-time"
-                                        >Thời gian nhận hàng</label
-                                    >
-                                    <select
-                                        name="delivery-time"
-                                        id="delivery-time"
-                                    >
-                                        <option value="">chọn thời gian</option>
-                                        <option value="08h00-12h00">
-                                            08h00-12h00
-                                        </option>
-                                        <option value="14h00-18h00">
-                                            14h00-18h00
-                                        </option>
-                                        <option value="19h00-21h00">
-                                            19h00-21h00
-                                        </option>
-                                    </select>
+                                <div class="mb-3 row">
+                                    <div class="col-8">
+                                        <input
+                                            type="Email"
+                                            class="form-control"
+                                            id="Email"
+                                            placeholder="email"
+                                        />
+                                    </div>
+                                    <div class="col-4">
+                                        <input
+                                            type="Number"
+                                            class="form-control"
+                                            id="Phone"
+                                            placeholder="số điện thoại"
+                                        />
+                                    </div>
+                                    <div class="mt-3">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="Address"
+                                            placeholder="Địa chỉ"
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="invoice">
-                                <input type="checkbox" id="invoice" />
+                                <label for="brand-1" class="payment-info__label"
+                                    >Phương thức vận chuyển</label
+                                >
+                                <label class="radio">
+                                    <input
+                                        type="radio"
+                                        id="brand-1"
+                                        name="brand-1"
+                                        checked
+                                    />
+                                    <label
+                                        for="brand-1"
+                                        class="radio__shape"
+                                    ></label>
+                                    <label for="brand-1" class="radio__label">
+                                        Giao hàng tận nơi
+                                    </label>
+                                    <span class="radio__price">0đ</span>
+                                </label>
                                 <label
-                                    for="invoice"
-                                    class="invoice__checkbox"
-                                ></label>
-                                <label for="invoice"
-                                    >Xuất hóa đơn công ty</label
+                                    for="payment-1"
+                                    class="payment-info__label"
+                                    >Phương thức thanh toán</label
                                 >
-                            </div>
-                            <div class="total">
-                                <p class="total__text">Tổng cộng</p>
-                                <div class="total__detail">
-                                    <p class="total__price">77,800,000đ</p>
-                                    <small>(Đã bao gồm VAT nếu có)</small>
-                                </div>
-                            </div>
-                            <div class="discount">
-                                <div class="discount__text">
-                                    <span class="discount__icon">
-                                        <i class="fa-solid fa-tag"></i>
-                                    </span>
-                                    Mã giảm giá
-                                </div>
-                                <div class="discount__code">
-                                    <button
-                                        class="btn-discount"
-                                        type="button"
-                                        data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasExample"
-                                        aria-controls="offcanvasExample"
-                                    >
-                                        Chọn mã giảm giá
-                                        <span>
+                                <label class="radio">
+                                    <input
+                                        type="radio"
+                                        id="payment-1"
+                                        name="payment"
+                                        checked
+                                    />
+                                    <label
+                                        for="payment-1"
+                                        class="radio__shape"
+                                    ></label>
+                                    <label for="payment-1" class="radio__label">
+                                        <span class="radio__icon">
                                             <i
-                                                class="fa-solid fa-chevron-right"
+                                                class="fa-solid fa-money-bill-wave"
                                             ></i>
                                         </span>
+                                        Thanh toán khi nhận hàng (COD)
+                                    </label>
+                                </label>
+                                <label class="radio">
+                                    <input
+                                        type="radio"
+                                        id="payment-2"
+                                        name="payment"
+                                    />
+                                    <label
+                                        for="payment-2"
+                                        class="radio__shape"
+                                    ></label>
+                                    <label for="payment-2" class="radio__label">
+                                        <span class="radio__icon">
+                                            <i
+                                                class="fa-solid fa-building-columns"
+                                            ></i>
+                                        </span>
+                                        Chuyển khoản qua ngân hàng
+                                    </label>
+                                </label>
+                                <div class="mt-3 row radio__btn">
+                                    <a
+                                        href="/shopping-cart.html"
+                                        class="link-btn"
+                                        >Giỏ hàng</a
+                                    >
+                                    <button type="submit" class="pay-btn">
+                                        Hoàn tất đơn hàng
                                     </button>
                                 </div>
+                            </form>
+                        </div>
+                        <div class="payment-order col-12 col-lg-5">
+                            <h2 class="payment-order__title">Giỏ hàng(3)</h2>
+                            <div class="order-list">
+                                <div class="order-item">
+                                    <a href="/detail.html" class="order-item__link">
+                                        <img
+                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
+                                            alt="ảnh xe đạp"
+                                            class="order-item__img"
+                                        />
+                                        <span>1</span>
+                                    </a>
+                                    <div class="order-item__info">
+                                        <a
+                                            href="/detail.html"
+                                            class="order-item__name"
+                                        >
+                                            Xe Đạp Đường Trường CF 1 Đĩa 2021
+                                        </a>
+                                        <small>Trắng</small>
+                                    </div>
+                                    <p class="order-item__price">77,800,000đ</p>
+                                </div>
+                                <div class="order-item">
+                                    <a href="/detail.html" class="order-item__link">
+                                        <img
+                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
+                                            alt="ảnh xe đạp"
+                                            class="order-item__img"
+                                        />
+                                        <span>1</span>
+                                    </a>
+                                    <div class="order-item__info">
+                                        <a
+                                            href="/detail.html"
+                                            class="order-item__name"
+                                        >
+                                            Xe Đạp Đường Trường CF 1 Đĩa 2021
+                                        </a>
+                                        <small>Trắng</small>
+                                    </div>
+                                    <p class="order-item__price">77,800,000đ</p>
+                                </div>
+                                <div class="order-item">
+                                    <a href="/detail.html" class="order-item__link">
+                                        <img
+                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
+                                            alt="ảnh xe đạp"
+                                            class="order-item__img"
+                                        />
+                                        <span>1</span>
+                                    </a>
+                                    <div class="order-item__info">
+                                        <a
+                                            href="/detail.html"
+                                            class="order-item__name"
+                                        >
+                                            Xe Đạp Đường Trường CF 1 Đĩa 2021
+                                        </a>
+                                        <small>Trắng</small>
+                                    </div>
+                                    <p class="order-item__price">77,800,000đ</p>
+                                </div>
                             </div>
-                            <a href="/payment.html" class="primary-btn pay-btn">
-                                thanh toán
-                            </a>
-                            <div class="pay">
-                                <a href="#"
-                                    ><img
-                                        src="https://theme.hstatic.net/200000895723/1001254710/14/footer_trustbadge.png?v=294"
-                                /></a>
+                            <div class="payment-order__voucher">
+                                <div class="voucher-wrapper">
+                                    <input
+                                        type="text"
+                                        placeholder="Mã giảm giá"
+                                        class="voucher-input"
+                                    />
+                                    <button class="pay-btn payment-order-btn">
+                                        Sử dụng
+                                    </button>
+                                </div>
+                                <button
+                                    class="link-btn mt-3"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasExample"
+                                    aria-controls="offcanvasExample"
+                                >
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-ticket-simple"
+                                        ></i>
+                                    </span>
+                                    Chọn mã giảm giá
+                                </button>
+                                <p class="payment-order__selected">Đã chọn</p>
+                                <div class="product__discount">
+                                    <ul class="product-code__list">
+                                        <li class="product-code__item">
+                                            <p>SUMMER5</p>
+                                        </li>
+                                        <li class="product-code__item">
+                                            <p>SUMMER5</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <table class="payment-order__table">
+                                <tr>
+                                    <td>Tạm tính</td>
+                                    <td>77,800,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>Mã giảm giá</td>
+                                    <td>200,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>Phí vận chuyển</td>
+                                    <td>Miễn phí</td>
+                                </tr>
+                            </table>
+                            <hr />
+                            <div class="payment-order__total">
+                                <p class="payment-order__total-text">
+                                    Tổng cộng
+                                </p>
+                                <strong class="payment-order__total-value"
+                                    >77,600,000đ</strong
+                                >
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="offer">
-                <div class="container">
-                    <div class="offer__header product__header">
-                        <h1 class="offer__title">Có thể bạn thích</h1>
-                    </div>
-                    <div class="offer__list-wrapper">
-                        <div class="offer__list row">
-                            <div class="card col">
-                                <div class="card__thumbnail">
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="xe đạp"
-                                        />
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_2.webp"
-                                            alt="xe đạp"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="card-desc__category">EGA BIKE</p>
-                                    <h4 class="card-desc__name">
-                                        Xe đạp đường trường Allez 2021
-                                    </h4>
-                                    <strong class="card-desc__price">
-                                        15,990,000đ
-                                    </strong>
-                                    <p class="card-desc__price-original">
-                                        <span>24,580,000đ</span>
-                                        <span class="card-desc__discount"
-                                            >-35%</span
-                                        >
-                                    </p>
-                                    <div class="card-desc__select">
-                                        <div class="card-desc__option active">
-                                            <img
-                                                src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            />
-                                        </div>
-                                        <div class="card-desc__option">
-                                            <img
-                                                src="./src/assets/images/Product_Bicyle/Allez/Allez_2.webp"
-                                            />
-                                        </div>
-                                    </div>
-                                    <p class="card-desc__sold-label">
-                                        Đã bán 177 sản phẩm
-                                    </p>
-                                    <div
-                                        class="card-desc__sold-1 card-desc__sold"
-                                    ></div>
-                                </div>
-                            </div>
-                            <div class="card col">
-                                <div class="card__thumbnail">
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="xe đạp"
-                                        />
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_2.webp"
-                                            alt="xe đạp"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="card-desc__category">EGA BIKE</p>
-                                    <h4 class="card-desc__name">
-                                        Xe đạp đường trường Allez 2021
-                                    </h4>
-                                    <strong class="card-desc__price">
-                                        15,990,000đ
-                                    </strong>
-                                    <p class="card-desc__price-original">
-                                        <span>24,580,000đ</span>
-                                        <span class="card-desc__discount"
-                                            >-35%</span
-                                        >
-                                    </p>
-                                    <div class="card-desc__select">
-                                        <div
-                                            class="card-desc__option active white"
-                                        ></div>
-                                    </div>
-                                    <p class="card-desc__sold-label">
-                                        Đã bán 177 sản phẩm
-                                    </p>
-                                    <div
-                                        class="card-desc__sold-2 card-desc__sold"
-                                    ></div>
-                                </div>
-                            </div>
-                            <div class="card col">
-                                <div class="card__thumbnail">
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="xe đạp"
-                                        />
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_2.webp"
-                                            alt="xe đạp"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="card-desc__category">EGA BIKE</p>
-                                    <h4 class="card-desc__name">
-                                        Xe đạp đường trường Allez 2021
-                                    </h4>
-                                    <strong class="card-desc__price">
-                                        15,990,000đ
-                                    </strong>
-                                    <p class="card-desc__price-original">
-                                        <span>24,580,000đ</span>
-                                        <span class="card-desc__discount"
-                                            >-35%</span
-                                        >
-                                    </p>
-                                    <div class="card-desc__select">
-                                        <div class="card-desc__option active">
-                                            <img
-                                                src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            />
-                                        </div>
-                                    </div>
-                                    <p class="card-desc__sold-label">
-                                        Đã bán 177 sản phẩm
-                                    </p>
-                                    <div
-                                        class="card-desc__sold card-desc__sold-3"
-                                    ></div>
-                                </div>
-                            </div>
-                            <div class="card col">
-                                <div class="card__thumbnail">
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="xe đạp"
-                                        />
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_2.webp"
-                                            alt="xe đạp"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="card-desc__category">EGA BIKE</p>
-                                    <h4 class="card-desc__name">
-                                        Xe đạp đường trường Allez 2021
-                                    </h4>
-                                    <strong class="card-desc__price">
-                                        15,990,000đ
-                                    </strong>
-                                    <p class="card-desc__price-original">
-                                        <span>24,580,000đ</span>
-                                        <span class="card-desc__discount"
-                                            >-35%</span
-                                        >
-                                    </p>
-                                    <div class="card-desc__select"></div>
-                                    <p class="card-desc__sold-label">
-                                        Hết hàng
-                                    </p>
-                                    <div
-                                        class="card-desc__sold card-desc__sold-4"
-                                    ></div>
-                                </div>
-                            </div>
-                            <div class="card col">
-                                <div class="card__thumbnail">
-                                    <a href="/detail.html">
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_1.webp"
-                                            alt="xe đạp"
-                                        />
-                                        <img
-                                            src="./src/assets/images/Product_Bicyle/Allez/Allez_2.webp"
-                                            alt="xe đạp"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="card-desc__category">EGA BIKE</p>
-                                    <h4 class="card-desc__name">
-                                        Xe đạp đường trường Allez 2021
-                                    </h4>
-                                    <strong class="card-desc__price">
-                                        15,990,000đ
-                                    </strong>
-                                    <p class="card-desc__price-original">
-                                        <span>24,580,000đ</span>
-                                        <span class="card-desc__discount"
-                                            >-35%</span
-                                        >
-                                    </p>
-                                    <div class="card-desc__select"></div>
-                                    <p class="card-desc__sold-label">
-                                        Hết hàng
-                                    </p>
-                                    <div
-                                        class="card-desc__sold card-desc__sold-4"
-                                    ></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer__btn">
-                        <button class="primary-btn">Xem tất cả</button>
                     </div>
                 </div>
             </section>
@@ -1403,6 +1169,7 @@
                 </div>
             </div>
         </div>
+
         <!-- offcanvas -->
         <div
             class="offcanvas offcanvas-end"

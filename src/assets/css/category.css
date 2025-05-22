@@ -1,4 +1,4 @@
-@import url("./_variable.css");
+@import url("/src/assets/css/_variables.css");
 /* ============================================= main  =============================================*/
 /* ============================================= category =============================================*/
 .category {
@@ -27,7 +27,7 @@
 }
 
 /* -------- side bar -------- */
-.sidebar{
+.sidebar {
     padding-right: 20px;
 }
 .sidebar-item {
@@ -39,7 +39,7 @@
     text-transform: uppercase;
     margin: 0;
 }
-
+/* -------- checkbox custom -------- */
 .checkbox {
     margin-top: 15px;
     display: flex;
@@ -109,7 +109,7 @@
     display: block;
 }
 /* -------- product list -------- */
-.product-list{
+.product-list {
     margin-top: 0;
 }
 .btn-filter {
@@ -130,6 +130,8 @@
     text-align: center;
     font-weight: 600;
 }
+
+
 /* -------- content -------- */
 /* ++++++++++++++++++++++ box ++++++++++++++++++++++ */
 /* ============================================= block  =============================================*/

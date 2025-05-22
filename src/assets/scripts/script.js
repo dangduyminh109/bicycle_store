@@ -159,9 +159,7 @@ async function handleAuth() {
 }
 
 function handleQuantityControl() {
-    const quantityControls = document.querySelectorAll(
-        ".quantity-control"
-    );
+    const quantityControls = document.querySelectorAll(".quantity-control");
     if (quantityControls) {
         quantityControls.forEach((item) => {
             const quantityControlBtnDecrease = item.querySelector(
@@ -173,13 +171,11 @@ function handleQuantityControl() {
             const quantityControlInput = item.querySelector(
                 ".quantity-control__input"
             );
-            console.log(item);
-            console.log(quantityControlInput, quantityControlBtnDecrease);
             quantityControlBtnDecrease.onclick = () => {
                 if (quantityControlInput.value > 1) {
                     quantityControlInput.value--;
                 }
-            }
+            };
             quantityControlBtnIncrease.onclick = () => {
                 quantityControlInput.value++;
             };

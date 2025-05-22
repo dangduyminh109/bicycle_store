@@ -46,6 +46,17 @@
     .introduce__content {
         padding: 10px;
     }
+
+    .payment-info {
+        order: 1;
+        margin-top: 30px;
+        padding: 0 5px;
+    }
+
+    .payment-order {
+        padding: 20px;
+        border: 0;
+    }
 }
 
 /* Ẩn khi màn hình nhỏ hơn 768px (md trở xuống) */
@@ -255,5 +266,14 @@
     }
     .offer__header {
         margin-bottom: 5px;
+    }
+
+    .product-code__list {
+        min-width: 200px;
+    }
+
+    .order-item__img{
+        height: 40px;
+        width: 40px;
     }
 }
